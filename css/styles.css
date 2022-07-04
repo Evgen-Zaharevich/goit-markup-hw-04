@@ -347,6 +347,45 @@ p {
   margin-bottom: 0;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+}
+
+.social-list .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-link:hover .team-icon {
+  fill: var(--white-color);
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: #afb1b8;
+}
+
 /* подвал (footer) */
 
 .footer-line {
