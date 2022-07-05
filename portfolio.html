@@ -32,9 +32,21 @@
 
         <ul class="header-contacts list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="contact-link link">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="contact-link link">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -57,7 +69,7 @@
           <!-- Примеры работ -->
 
           <ul class="work-list list">
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-1.jpg"
                 alt="ноутбук на экране которого показана главная страница сайта"
@@ -70,7 +82,7 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-2.jpg"
                 alt="два баскетболиста борятся за мяч"
@@ -83,7 +95,7 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-3.jpg"
                 alt="рыба с текстовым логотипом ресторана"
@@ -96,7 +108,7 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-4.jpg"
                 alt="наушники"
@@ -109,7 +121,7 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-5.jpg"
                 alt="две коробки"
@@ -122,7 +134,7 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-6.jpg"
                 alt="монитор комьютера на экране которого отображается главная страница сайта"
@@ -135,7 +147,7 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-7.jpg"
                 alt="журнал в котором показыны фото работы"
@@ -148,7 +160,7 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-8.jpg"
                 alt="белая лейба проэкта"
@@ -161,7 +173,7 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card item">
               <img
                 src="./images/portfolio/portfolio-project-9.jpg"
                 alt="ноутбук на экране показана главная страница приложения"
@@ -181,27 +193,63 @@
     <!--Подвал-->
 
     <footer class="footer-line">
-      <div class="container">
-        <a href="index.html" class="footer-logo"><span class="logo-accent">Web</span>Studio</a>
-        <address>
-          <ul class="footer-list list">
-            <li class="item">
-              <a
-                href="https://goo.gl/maps/cAfCM62VBtgG5pma7"
-                class="footer-address link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+      <div class="container footer-container">
+        <div class="footer-links">
+          <a href="index.html" class="footer-logo"><span class="logo-accent">Web</span>Studio</a>
+          <address>
+            <ul class="footer-list list">
+              <li class="item">
+                <a
+                  href="https://goo.gl/maps/cAfCM62VBtgG5pma7"
+                  class="footer-address link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="item">
+                <a href="maito:info@example.com" class="link">info@example.com</a>
+              </li>
+              <li class="item">
+                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-cta">
+          <h3 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="footer-social-list list">
+            <li class="social-item">
+              <a class="team-link" href="https://www.instagram.com">
+                <svg class="team-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a href="maito:info@example.com" class="link">info@example.com</a>
+            <li class="social-item">
+              <a class="team-link" href="https://twitter.com/">
+                <svg class="team-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            <li class="social-item">
+              <a class="team-link" href="https://www.facebook.com/">
+                <svg class="team-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="team-link" href="https://www.linkedin.com/">
+                <svg class="team-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

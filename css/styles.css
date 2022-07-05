@@ -284,11 +284,6 @@ p {
   margin-bottom: 30px;
 }
 
-.benefits-icon {
-  width: 72px;
-  height: 72px;
-}
-
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -393,14 +388,12 @@ p {
   background-color: var(--accent-color);
 }
 
-.team-link:hover .team-icon {
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
   fill: var(--white-color);
 }
 
 .team-icon {
-  width: 20px;
-  height: 20px;
-
   fill: var(--icon-color);
 }
 
@@ -425,18 +418,18 @@ p {
   border-radius: 4px;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.client-link:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
 .client-icon {
   display: inline-block;
-  width: 106px;
-  height: 60px;
 
   fill: var(--icon-color);
 }
@@ -447,6 +440,11 @@ p {
   background-color: var(--hero-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-list .footer-address {
@@ -473,6 +471,44 @@ p {
 .footer-list a:hover,
 .footer-list a:focus {
   color: var(--accent-color);
+}
+
+.footer-cta {
+  margin-left: 70px;
+}
+
+.footer-title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+
+  color: var(--white-color);
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-list .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-list .team-icon {
+  fill: var(--white-color);
+}
+
+.footer-social-list .team-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list .team-link:hover {
+  background-color: var(--accent-color);
 }
 
 /* ПОРТФОЛИО */
@@ -519,6 +555,8 @@ p {
 .button-list button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list .item:not(:last-child) {
@@ -561,4 +599,9 @@ p {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+}
+
+.card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
