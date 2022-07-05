@@ -16,6 +16,7 @@
   --secondary-page-color: #f5f4fa;
   --hero-footer-color: #2f303a;
   --button-hover: #188ce8;
+  --icon-color: #afb1b8;
 
   --work-list-gap: 30px;
 }
@@ -52,7 +53,12 @@ body {
 }
 
 .title {
+  margin-bottom: 50px;
+
   font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 h1,
@@ -278,6 +284,18 @@ p {
   margin-bottom: 30px;
 }
 
+.benefits-icon {
+  width: 72px;
+  height: 72px;
+}
+
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
 /* Чем мы занимаемся */
 
 .headline {
@@ -322,7 +340,7 @@ p {
   margin-bottom: 50px;
 
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
 }
 
@@ -383,7 +401,44 @@ p {
   width: 20px;
   height: 20px;
 
-  fill: #afb1b8;
+  fill: var(--icon-color);
+}
+
+/* список клиентов */
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+/* .client-link:hover {
+  color: var(--accent-color);
+}
+
+.client-icon {
+  fill: var(--accent-color);
+} */
+
+.client-icon {
+  display: inline-block;
+  width: 106px;
+  height: 60px;
+
+  fill: var(--icon-color);
 }
 
 /* подвал (footer) */
